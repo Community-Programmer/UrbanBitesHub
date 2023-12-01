@@ -1,0 +1,90 @@
+.main-section{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 83px);
+}
+.text-container{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.text-container h1{
+    font-size: 3.5rem;
+}
+
+.text-container p{
+    font-size: large;
+    margin-top: 5px;
+    line-height: 1.8rem;
+}
+
+.text-container h1 span{
+    color: #90BC2D;
+}
+.image-container{
+    width: 50%;
+    
+}
+
+.image-container img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.btn-container{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 25px;
+}
+
+.btn-container button{
+    padding: 15px;
+    border-radius: 5px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+}
+
+.location-bar{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.location-bar input{
+    border: none;
+    width: 95%;
+}
+
+.location-bar input:focus{
+    outline: none;
+}
+
+.location-bar i{
+    color: #90BC2D;
+}
+
+.primary-btn{
+    background-color: #90BC2D;  
+}
+
+.secondary-btn{
+    background-color: #adadab;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
