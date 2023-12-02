@@ -5,6 +5,7 @@
     max-width: 90%;
     margin: 0 auto;
     padding: 15px;
+    background-color: white;
 }
 
 .nav-links ul{
@@ -57,3 +58,45 @@
     color: #90BC2D;
     cursor: pointer;
 }
+
+#burger{
+    display: none;
+}
+
+
+/* Navbar responsive */
+
+@media only screen and (max-width:768px) {
+
+    #burger{
+      display: inline-block;
+    }
+
+
+
+    .nav-links{
+        position: absolute;
+        border-radius: 10px;
+        left: 2.5%;
+        top: 79px;
+        background-color: rgb(236, 236, 236);
+        width: 95%;
+        height: calc(100vh - 111px);
+        padding:  15px 0;
+        transform: translateX(-200%);
+    
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .nav-links.active{
+        transform: translateX(0);
+    }
+   
+  }

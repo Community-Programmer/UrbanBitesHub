@@ -6,12 +6,18 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     const [activeLink, setActiveLink] = useState('/');
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNavbar = () => {
+      setIsOpen(!isOpen);
+    };
 
     const handleLinkClick = (to) => {
       setActiveLink(to);
     };
 
   return (
+    <>
    <nav className="navbar">
 
     <div className="logo">
@@ -19,7 +25,7 @@ const Navbar = () => {
         <a href="/">UrbanBites Hub</a>
     </div>
 
-    <div className="nav-links">
+    <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <ul>
             <Link to='/'  onClick={() => handleLinkClick('/')}><li className={activeLink === '/' ? 'active' : ''}>Home</li></Link>
             <Link to='/menu'  onClick={() => handleLinkClick('/menu')}><li className={activeLink === '/menu' ? 'active' : ''}>Menu</li></Link>
@@ -30,12 +36,14 @@ const Navbar = () => {
     </div>
 
     <div className="icons">
-    <i className="fa-solid fa-magnifying-glass fa-xl"></i>
-    <i className="fa-solid fa-bag-shopping fa-xl"></i>
-    <i className="fa-solid fa-user fa-xl"></i>
+    <i className="fa-solid fa-magnifying-glass fa-xl"/>
+    <i className="fa-solid fa-bag-shopping fa-xl"/>
+    <i className="fa-solid fa-user fa-xl"/>
+    <i onClick={toggleNavbar} id='burger' class="fa-solid fa-bars fa-xl"></i>
     </div>
 
    </nav>
+    </>
   )
 }
 
