@@ -84,6 +84,7 @@
         height: calc(100vh - 111px);
         padding:  15px 0;
         transform: translateX(-200%);
+        z-index: 1;
     
     }
 
