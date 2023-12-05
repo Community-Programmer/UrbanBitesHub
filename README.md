@@ -1,3 +1,14 @@
+
+#  UrbanBitesHub
+
+UrbanBitesHub is a stylish and user-friendly frontend web application that caters to urban food enthusiasts looking to discover the best local eateries in their city. This app is designed with a focus on providing a seamless and visually engaging experience for users passionate about exploring diverse culinary options
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e3ce6dab-ab30-49ee-839f-936e0afa9740/deploy-status)](https://app.netlify.com/sites/urbanbiteshub/deploys)
+[![GitHub Contributors](https://img.shields.io/github/contributors/Community-Programmer/urbanbiteshub.svg)](https://github.com/Community-Programmer/UrbanBitesHub/graphs/contributors)
+
+![image](https://github.com/Community-Programmer/UrbanBitesHub/assets/76515568/0b6dd93b-b218-4e2f-83a4-4557c568c23e)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
