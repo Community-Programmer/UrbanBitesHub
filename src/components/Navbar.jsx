@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import image from '../images/restaurant.png'
 import '../css/Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -43,6 +43,7 @@ const Navbar = () => {
     </div>
 
    </nav>
+   <Outlet/>
     </>
   )
 }
