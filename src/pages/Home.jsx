@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import burger from '../images/burger.jpg'
 import pasta from '../images/macaroni-with-sausage.jpg'
 import pizza from '../images/seafood-pizza.jpg'
@@ -43,7 +43,7 @@ const Home = () => {
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className="image">
-              <img src={image} alt={`image-${index}`} />
+              <img src={image} alt='slideshow'/>
             </div>
           ))}
           </Slider>

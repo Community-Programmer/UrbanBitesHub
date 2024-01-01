@@ -39,7 +39,7 @@ const Navbar = () => {
     <i className="fa-solid fa-magnifying-glass fa-xl"/>
     <i className="fa-solid fa-bag-shopping fa-xl"/>
     <i className="fa-solid fa-user fa-xl"/>
-    <i onClick={toggleNavbar} id='burger' class="fa-solid fa-bars fa-xl"></i>
+    <i onClick={toggleNavbar} id='burger' className="fa-solid fa-bars fa-xl"></i>
     </div>
 
    </nav>
