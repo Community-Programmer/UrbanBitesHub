@@ -81,15 +81,6 @@
     background-color: #adadab;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 2s;
-  }
-  @keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
-  }
-
   /* Home Page Responsive Design */
 
   @media only screen and (max-width:768px) {

@@ -1,29 +1,26 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import burger from '../images/burger.jpg'
 import pasta from '../images/macaroni-with-sausage.jpg'
 import pizza from '../images/seafood-pizza.jpg'
 import chicken from '../images/delicious-fried-chicken-plate.jpg'
+import Slider from 'react-slick';
 import '../css/Home.css'
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Home = () => {
 
-  useEffect(()=>{
-    let index = 0;
-    displayImages();
-    function displayImages() {
-      let i;
-      const images = document.getElementsByClassName("image");
-      for (i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-      }
-      index++;
-      if (index > images.length) {
-        index = 1;
-      }
-      images[index-1].style.display = "block";
-      setTimeout(displayImages, 3000); 
-    }
-  },[])
+  const images = [burger, pasta, pizza, chicken];
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,         
+    autoplaySpeed: 3000, 
+  };
+
   return (
     <>
     <main className='main-section'>
@@ -42,18 +39,13 @@ const Home = () => {
             </div>
         </div>
         <div className="image-container">
-          <div className="image fade">
-            <img src={burger} alt="burger" />
-          </div>
-          <div className="image fade">
-            <img src={pasta} alt="pasta" />
-          </div>
-          <div className="image fade">
-            <img src={pizza} alt="pizza" />
-          </div>
-          <div className="image fade">
-            <img src={chicken} alt="chicken" />
-          </div>
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index} className="image">
+              <img src={image} alt={`image-${index}`} />
+            </div>
+          ))}
+          </Slider>
             
             
         </div>
