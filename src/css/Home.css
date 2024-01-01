@@ -80,7 +80,9 @@
 .secondary-btn{
     background-color: #adadab;
 }
-
+.slick-slide div {
+    outline: none;
+}
   /* Home Page Responsive Design */
 
   @media only screen and (max-width:768px) {
